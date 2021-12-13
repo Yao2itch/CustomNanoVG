@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #include "NanoVGRenderer.h"
 
-#include "../../nanovg/src/nanovg_gl.h"
+#include "../nanovg/src/nanovg_gl.h"
 
 @implementation NanoVGRenderer
 
