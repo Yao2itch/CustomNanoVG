@@ -63,7 +63,6 @@ typedef struct mach_timebase_info mach_timebase_info_data_t;
     GLuint framebuffer;
     GLuint colorRenderbuffer;
     GLuint depthRenderbuffer;
-    CADisplayLink* displayLink;
 }
 @property NanoVGRenderer* nanoVGRenderer;
 @property(strong, nonatomic) EAGLContext *context;

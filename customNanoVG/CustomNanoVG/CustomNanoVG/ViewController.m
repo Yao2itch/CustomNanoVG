@@ -37,7 +37,7 @@
     [renderer setup];
     
     // create the framebuffer and bind it
-    glGenFramebuffers(1, &framebuffer);
+    /*glGenFramebuffers(1, &framebuffer);
     glBindFramebuffer(GL_FRAMEBUFFER, framebuffer);
     // create a color renderbuffer, allocate storage for it, and attach
     // it to the framebuffer's color attachment point
@@ -65,7 +65,7 @@
     if(status != GL_FRAMEBUFFER_COMPLETE) {
          NSLog(@"failed to make complete framebuffer object %x", status);
     }
-    glBindFramebuffer(GL_FRAMEBUFFER, 0);
+    glBindFramebuffer(GL_FRAMEBUFFER, 0);*/
     
     renderer->context.userData = malloc(sizeof(UserData));
     esCreateWindow(&renderer->context, "My Application", 640, 480, ES_WINDOW_RGB | ES_WINDOW_DEPTH );
@@ -74,14 +74,6 @@
     esRegisterUpdateFunc(&renderer->context, Update);
     
     prevt = getUptimeInSeconds();
-    
-    displayLink = [view.window.screen displayLinkWithTarget:self selector:@selector(drawFrame)];
-    [displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
-}
-
-void drawFrame ()
-{
-    int a = 0;
 }
 
 -(void)dealloc
@@ -104,26 +96,14 @@ void drawFrame ()
 
 -(void)glkView:(GLKView *)view drawInRect:(CGRect)rect
 {
-    return;
-    
     renderer->context.width = view.drawableWidth;
     renderer->context.height = view.drawableHeight;
     
-    /*
-    if (renderer->context.drawFunc)
-    {
-        renderer->context.drawFunc(&renderer->context);
-    }
-    */
+    glViewport(0, 0, renderer->context.width, renderer->context.height);
+    glClearColor(0.3f, 0.3f, 0.32f, 1.0f);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     
-    glBindFramebuffer(GL_FRAMEBUFFER, framebuffer);
-    glEnable(GL_DEPTH_TEST);
-    
-    glViewport(0, 0, view.drawableWidth, view.drawableHeight);
-    glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
-    glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT|GL_STENCIL_BUFFER_BIT);
-    
-    float pxRatio = 96.0;
+    float pxRatio = 1.0f;
     nvgBeginFrame(renderer->vg, renderer->context.width, renderer->context.height, pxRatio);
     
     t = getUptimeInSeconds();
@@ -133,11 +113,6 @@ void drawFrame ()
     [renderer render:renderer->vg MX:0 MY:0 Width:renderer->context.width Height:renderer->context.height T:dt Blowup:0 demoData:&renderer->data];
     
     nvgEndFrame(renderer->vg);
-    
-    glBindFramebuffer(GL_FRAMEBUFFER, 0);
-    glDisable(GL_DEPTH_BUFFER_BIT);
-    glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 }
 
 -(void)tearDownGL
