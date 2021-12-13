@@ -5,6 +5,8 @@
 //  Created by 姚隽楠 on 2021/12/9.
 //  Copyright © 2021 tencent. All rights reserved.
 //
+#include <mach/mach_time.h>
+
 #import <GLKit/GLKit.h>
 #include "NanoVGRenderer.h"
 
@@ -49,8 +51,19 @@ typedef struct
     
 } UserData;
 
+
+typedef struct mach_timebase_info *mach_timebase_info_t;
+typedef struct mach_timebase_info mach_timebase_info_data_t;
+
 @interface ViewController : GLKViewController{
     NanoVGRenderer* renderer;
+    double t;
+    double prevt;
+    double dt;
+    GLuint framebuffer;
+    GLuint colorRenderbuffer;
+    GLuint depthRenderbuffer;
+    CADisplayLink* displayLink;
 }
 @property NanoVGRenderer* nanoVGRenderer;
 @property(strong, nonatomic) EAGLContext *context;

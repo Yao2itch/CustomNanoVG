@@ -8,36 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		6F6890B0276254930079C9C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F6890AF276254930079C9C1 /* Main.storyboard */; };
+		6F9E88EF27674F04003D3A14 /* libnanovg-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F9E88EC27674A51003D3A14 /* libnanovg-ios.a */; };
+		6F9E88F9276759BA003D3A14 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 6F9E88F8276759BA003D3A14 /* images */; };
+		6F9E890527676480003D3A14 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F9E890027676480003D3A14 /* Roboto-Bold.ttf */; };
+		6F9E890627676480003D3A14 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F9E890127676480003D3A14 /* Roboto-Regular.ttf */; };
+		6F9E890727676480003D3A14 /* entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F9E890227676480003D3A14 /* entypo.ttf */; };
+		6F9E890827676480003D3A14 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F9E890327676480003D3A14 /* Roboto-Light.ttf */; };
+		6F9E890927676480003D3A14 /* NotoEmoji-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F9E890427676480003D3A14 /* NotoEmoji-Regular.ttf */; };
 		6FB2FAB6276224A200C453E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB2FAB5276224A200C453E9 /* AppDelegate.m */; };
-		6FB2FAB9276224A200C453E9 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB2FAB8276224A200C453E9 /* SceneDelegate.m */; };
 		6FB2FABC276224A200C453E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB2FABB276224A200C453E9 /* ViewController.m */; };
 		6FB2FAC1276224A900C453E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FB2FAC0276224A900C453E9 /* Assets.xcassets */; };
-		6FB2FAC4276224A900C453E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FB2FAC2276224A900C453E9 /* LaunchScreen.storyboard */; };
 		6FB2FAC7276224A900C453E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB2FAC6276224A900C453E9 /* main.m */; };
 		6FB2FADE2762253100C453E9 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FB2FADD2762253100C453E9 /* OpenGLES.framework */; };
-		6FB2FAFE27622CFC00C453E9 /* libnanovg-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FB2FAFB27622CEF00C453E9 /* libnanovg-ios.a */; };
 		6FB2FB072762308600C453E9 /* NanoVGRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6FB2FB062762308600C453E9 /* NanoVGRenderer.mm */; };
 		6FB2FB312762407900C453E9 /* ESUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = 6FB2FB2D2762407900C453E9 /* ESUtil.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6FB2FAD72762251500C453E9 /* PBXContainerItemProxy */ = {
+		6F9E88E927674A51003D3A14 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6FB2FAD32762251500C453E9 /* nanovg.xcodeproj */;
+			containerPortal = 6F9E88E427674A51003D3A14 /* nanovg.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 52D34F79241F23CF15AF4DBF;
 			remoteInfo = nanovg;
 		};
-		6FB2FAFA27622CEF00C453E9 /* PBXContainerItemProxy */ = {
+		6F9E88EB27674A51003D3A14 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6FB2FAD32762251500C453E9 /* nanovg.xcodeproj */;
+			containerPortal = 6F9E88E427674A51003D3A14 /* nanovg.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 6FB2FAF827622B2E00C453E9;
 			remoteInfo = "nanovg-ios";
 		};
-		6FB2FAFC27622CF300C453E9 /* PBXContainerItemProxy */ = {
+		6F9E88ED27674EFF003D3A14 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6FB2FAD32762251500C453E9 /* nanovg.xcodeproj */;
+			containerPortal = 6F9E88E427674A51003D3A14 /* nanovg.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 6FB2FAEC27622B2E00C453E9;
 			remoteInfo = "nanovg-ios";
@@ -46,18 +50,21 @@
 
 /* Begin PBXFileReference section */
 		6F6890AF276254930079C9C1 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		6F9E88E427674A51003D3A14 /* nanovg.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = nanovg.xcodeproj; path = ../nanovg/build/nanovg.xcodeproj; sourceTree = "<group>"; };
+		6F9E88F8276759BA003D3A14 /* images */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = images; sourceTree = SOURCE_ROOT; };
+		6F9E890027676480003D3A14 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		6F9E890127676480003D3A14 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		6F9E890227676480003D3A14 /* entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = entypo.ttf; sourceTree = "<group>"; };
+		6F9E890327676480003D3A14 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		6F9E890427676480003D3A14 /* NotoEmoji-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoEmoji-Regular.ttf"; sourceTree = "<group>"; };
 		6FB2FAB1276224A200C453E9 /* CustomNanoVG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomNanoVG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FB2FAB4276224A200C453E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6FB2FAB5276224A200C453E9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6FB2FAB7276224A200C453E9 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		6FB2FAB8276224A200C453E9 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		6FB2FABA276224A200C453E9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6FB2FABB276224A200C453E9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6FB2FAC0276224A900C453E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6FB2FAC3276224A900C453E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6FB2FAC5276224A900C453E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FB2FAC6276224A900C453E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6FB2FAD32762251500C453E9 /* nanovg.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = nanovg.xcodeproj; path = ../../nanovg/build/nanovg.xcodeproj; sourceTree = "<group>"; };
 		6FB2FADD2762253100C453E9 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		6FB2FB062762308600C453E9 /* NanoVGRenderer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = NanoVGRenderer.mm; sourceTree = "<group>"; };
 		6FB2FB08276230A000C453E9 /* NanoVGRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NanoVGRenderer.h; sourceTree = "<group>"; };
@@ -71,7 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FB2FAFE27622CFC00C453E9 /* libnanovg-ios.a in Frameworks */,
+				6F9E88EF27674F04003D3A14 /* libnanovg-ios.a in Frameworks */,
 				6FB2FADE2762253100C453E9 /* OpenGLES.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,10 +86,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F9E88E527674A51003D3A14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F9E88EA27674A51003D3A14 /* libnanovg.a */,
+				6F9E88EC27674A51003D3A14 /* libnanovg-ios.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F9E88F727675992003D3A14 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6F9E890227676480003D3A14 /* entypo.ttf */,
+				6F9E890427676480003D3A14 /* NotoEmoji-Regular.ttf */,
+				6F9E890027676480003D3A14 /* Roboto-Bold.ttf */,
+				6F9E890327676480003D3A14 /* Roboto-Light.ttf */,
+				6F9E890127676480003D3A14 /* Roboto-Regular.ttf */,
+				6F9E88F8276759BA003D3A14 /* images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		6FB2FAA8276224A100C453E9 = {
 			isa = PBXGroup;
 			children = (
-				6FB2FAD32762251500C453E9 /* nanovg.xcodeproj */,
+				6F9E88F727675992003D3A14 /* Resources */,
+				6F9E88E427674A51003D3A14 /* nanovg.xcodeproj */,
 				6FB2FAB3276224A200C453E9 /* CustomNanoVG */,
 				6FB2FAB2276224A200C453E9 /* Products */,
 				6FB2FADB2762252800C453E9 /* Frameworks */,
@@ -104,12 +134,9 @@
 				6FB2FB2F2762407900C453E9 /* ESUtil.h */,
 				6FB2FAB4276224A200C453E9 /* AppDelegate.h */,
 				6FB2FAB5276224A200C453E9 /* AppDelegate.m */,
-				6FB2FAB7276224A200C453E9 /* SceneDelegate.h */,
-				6FB2FAB8276224A200C453E9 /* SceneDelegate.m */,
 				6FB2FABA276224A200C453E9 /* ViewController.h */,
 				6FB2FABB276224A200C453E9 /* ViewController.m */,
 				6FB2FAC0276224A900C453E9 /* Assets.xcassets */,
-				6FB2FAC2276224A900C453E9 /* LaunchScreen.storyboard */,
 				6FB2FAC5276224A900C453E9 /* Info.plist */,
 				6FB2FAC6276224A900C453E9 /* main.m */,
 				6FB2FB062762308600C453E9 /* NanoVGRenderer.mm */,
@@ -117,15 +144,6 @@
 				6F6890AF276254930079C9C1 /* Main.storyboard */,
 			);
 			path = CustomNanoVG;
-			sourceTree = "<group>";
-		};
-		6FB2FAD42762251500C453E9 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6FB2FAD82762251500C453E9 /* libnanovg.a */,
-				6FB2FAFB27622CEF00C453E9 /* libnanovg-ios.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		6FB2FADB2762252800C453E9 /* Frameworks */ = {
@@ -151,7 +169,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				6FB2FAFD27622CF300C453E9 /* PBXTargetDependency */,
+				6F9E88EE27674EFF003D3A14 /* PBXTargetDependency */,
 			);
 			name = CustomNanoVG;
 			productName = CustomNanoVG;
@@ -185,8 +203,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 6FB2FAD42762251500C453E9 /* Products */;
-					ProjectRef = 6FB2FAD32762251500C453E9 /* nanovg.xcodeproj */;
+					ProductGroup = 6F9E88E527674A51003D3A14 /* Products */;
+					ProjectRef = 6F9E88E427674A51003D3A14 /* nanovg.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -197,18 +215,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		6FB2FAD82762251500C453E9 /* libnanovg.a */ = {
+		6F9E88EA27674A51003D3A14 /* libnanovg.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libnanovg.a;
-			remoteRef = 6FB2FAD72762251500C453E9 /* PBXContainerItemProxy */;
+			remoteRef = 6F9E88E927674A51003D3A14 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		6FB2FAFB27622CEF00C453E9 /* libnanovg-ios.a */ = {
+		6F9E88EC27674A51003D3A14 /* libnanovg-ios.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libnanovg-ios.a";
-			remoteRef = 6FB2FAFA27622CEF00C453E9 /* PBXContainerItemProxy */;
+			remoteRef = 6F9E88EB27674A51003D3A14 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -218,8 +236,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F9E88F9276759BA003D3A14 /* images in Resources */,
+				6F9E890727676480003D3A14 /* entypo.ttf in Resources */,
 				6F6890B0276254930079C9C1 /* Main.storyboard in Resources */,
-				6FB2FAC4276224A900C453E9 /* LaunchScreen.storyboard in Resources */,
+				6F9E890627676480003D3A14 /* Roboto-Regular.ttf in Resources */,
+				6F9E890927676480003D3A14 /* NotoEmoji-Regular.ttf in Resources */,
+				6F9E890827676480003D3A14 /* Roboto-Light.ttf in Resources */,
+				6F9E890527676480003D3A14 /* Roboto-Bold.ttf in Resources */,
 				6FB2FAC1276224A900C453E9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,30 +259,18 @@
 				6FB2FAC7276224A900C453E9 /* main.m in Sources */,
 				6FB2FB312762407900C453E9 /* ESUtil.c in Sources */,
 				6FB2FB072762308600C453E9 /* NanoVGRenderer.mm in Sources */,
-				6FB2FAB9276224A200C453E9 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6FB2FAFD27622CF300C453E9 /* PBXTargetDependency */ = {
+		6F9E88EE27674EFF003D3A14 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "nanovg-ios";
-			targetProxy = 6FB2FAFC27622CF300C453E9 /* PBXContainerItemProxy */;
+			targetProxy = 6F9E88ED27674EFF003D3A14 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		6FB2FAC2276224A900C453E9 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6FB2FAC3276224A900C453E9 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		6FB2FAC8276224A900C453E9 /* Debug */ = {
@@ -309,7 +320,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../glfw-211209/glfw-3.3.5.bin.MACOS/include\"";
+				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -364,7 +375,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../glfw-211209/glfw-3.3.5.bin.MACOS/include\"";
+				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
